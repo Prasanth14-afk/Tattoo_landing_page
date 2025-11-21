@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import ThemeToggle from "./theme-toggle";
 
 const navLinks = [
     { name: "Portfolio", href: "#portfolio" },
@@ -35,11 +36,11 @@ export default function Navbar() {
                 className={cn(
                     "fixed top-0 left-0 right-0 z-50 transition-all duration-500 px-4 sm:px-6 md:px-12 py-3 md:py-4 flex justify-between items-center",
                     isScrolled
-                        ? "bg-black/80 backdrop-blur-md border-b border-white/10 py-2 md:py-3"
+                        ? "bg-background/80 backdrop-blur-md border-b border-border py-2 md:py-3"
                         : "bg-transparent"
                 )}
             >
-                <Link href="/" className="text-xl sm:text-2xl font-display font-bold tracking-widest uppercase z-50 relative">
+                <Link href="/" className="text-xl sm:text-2xl font-display font-bold tracking-widest uppercase z-50 relative text-foreground">
                     Ink & Iron
                 </Link>
 
@@ -55,6 +56,7 @@ export default function Navbar() {
                             <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full" />
                         </Link>
                     ))}
+                    <ThemeToggle />
                     <Link
                         href="#booking"
                         className="px-4 lg:px-6 py-2 border border-white/20 hover:bg-white hover:text-black transition-all duration-300 uppercase text-xs tracking-widest"
@@ -81,7 +83,7 @@ export default function Navbar() {
                         animate={{ opacity: 1, clipPath: "circle(150% at 100% 0)" }}
                         exit={{ opacity: 0, clipPath: "circle(0% at 100% 0)" }}
                         transition={{ duration: 0.5, ease: "easeInOut" }}
-                        className="fixed inset-0 bg-black z-40 flex flex-col justify-center items-center gap-6 md:gap-8 px-4"
+                        className="fixed inset-0 bg-background z-40 flex flex-col justify-center items-center gap-6 md:gap-8 px-4"
                     >
                         {navLinks.map((link) => (
                             <Link
@@ -93,13 +95,16 @@ export default function Navbar() {
                                 {link.name}
                             </Link>
                         ))}
-                        <Link
-                            href="#booking"
-                            onClick={() => setIsMobileMenuOpen(false)}
-                            className="mt-4 md:mt-8 px-8 py-3 border border-white/20 hover:bg-white hover:text-black transition-all duration-300 uppercase text-sm tracking-widest"
-                        >
-                            Book Appointment
-                        </Link>
+                        <div className="mt-4 md:mt-8 flex flex-col items-center gap-4">
+                            <ThemeToggle />
+                            <Link
+                                href="#booking"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                                className="px-8 py-3 border border-white/20 hover:bg-white hover:text-black transition-all duration-300 uppercase text-sm tracking-widest"
+                            >
+                                Book Appointment
+                            </Link>
+                        </div>
                     </motion.div>
                 )}
             </AnimatePresence>

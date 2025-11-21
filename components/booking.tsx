@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Booking() {
     return (
-        <section id="booking" className="py-20 md:py-32 px-4 sm:px-6 md:px-12 bg-neutral-950 relative z-10">
+        <section id="booking" className="py-20 md:py-32 px-4 sm:px-6 md:px-12 bg-card relative z-10">
             <div className="max-w-4xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: 30 }}

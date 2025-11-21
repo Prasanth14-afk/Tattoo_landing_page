@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Artists() {
     return (
-        <section id="artists" className="py-20 md:py-32 px-4 sm:px-6 md:px-12 bg-neutral-950 relative z-10 overflow-hidden">
+        <section id="artists" className="py-20 md:py-32 px-4 sm:px-6 md:px-12 bg-card relative z-10 overflow-hidden">
             {/* Background Text */}
             <div className="absolute top-10 md:top-20 left-0 w-full overflow-hidden pointer-events-none opacity-5">
                 <h2 className="text-[8rem] sm:text-[12rem] md:text-[16rem] lg:text-[20rem] font-display font-bold uppercase whitespace-nowrap leading-none">

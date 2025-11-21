@@ -15,7 +15,7 @@ export default function Styles() {
     const [activeStyle, setActiveStyle] = useState(styles[0]);
 
     return (
-        <section id="styles" className="py-20 md:py-32 px-4 sm:px-6 md:px-12 bg-neutral-900 relative z-10 overflow-hidden">
+        <section id="styles" className="py-20 md:py-32 px-4 sm:px-6 md:px-12 bg-muted relative z-10 overflow-hidden">
             <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-10 md:gap-12 lg:gap-16">
                 <div className="w-full md:w-1/3 z-20">
                     <span className="text-accent uppercase tracking-widest text-xs md:text-sm mb-3 md:mb-4 block">Expertise</span>
