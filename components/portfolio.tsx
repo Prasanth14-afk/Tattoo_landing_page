@@ -53,11 +53,11 @@ export default function Portfolio() {
                     className="mb-12 md:mb-20 flex flex-col md:flex-row justify-between items-start md:items-end border-b border-white/10 pb-6 md:pb-8 gap-6 md:gap-0"
                 >
                     <div>
-                        <span className="text-xs md:text-sm uppercase tracking-widest text-gray-500 mb-2 block">Our Craft</span>
-                        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold uppercase text-white leading-tight">Selected <br /> Works</h2>
+                        <span className="text-xs md:text-sm uppercase tracking-widest text-muted-foreground mb-2 block">Our Craft</span>
+                        <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold uppercase text-foreground leading-tight">Selected <br /> Works</h2>
                     </div>
                     <div className="w-full md:w-auto">
-                        <button className="text-xs md:text-sm uppercase tracking-widest border-b border-white pb-1 hover:text-gray-400 transition-colors">View All Projects</button>
+                        <button className="text-xs md:text-sm uppercase tracking-widest border-b border-foreground pb-1 text-foreground hover:text-muted-foreground transition-colors">View All Projects</button>
                     </div>
                 </motion.div>
 

@@ -8,7 +8,7 @@ export default function Artists() {
         <section id="artists" className="py-20 md:py-32 px-4 sm:px-6 md:px-12 bg-card relative z-10 overflow-hidden">
             {/* Background Text */}
             <div className="absolute top-10 md:top-20 left-0 w-full overflow-hidden pointer-events-none opacity-5">
-                <h2 className="text-[8rem] sm:text-[12rem] md:text-[16rem] lg:text-[20rem] font-display font-bold uppercase whitespace-nowrap leading-none">
+                <h2 className="text-[8rem] sm:text-[12rem] md:text-[16rem] lg:text-[20rem] font-display font-bold uppercase whitespace-nowrap leading-none text-foreground">
                     Masters
                 </h2>
             </div>
@@ -42,18 +42,18 @@ export default function Artists() {
                     >
                         <div>
                             <span className="text-accent uppercase tracking-widest text-xs md:text-sm mb-2 block">Lead Artist</span>
-                            <h3 className="text-4xl sm:text-5xl md:text-6xl font-display uppercase mb-4 md:mb-6">Alex "Ink" Vane</h3>
+                            <h3 className="text-4xl sm:text-5xl md:text-6xl font-display uppercase mb-4 md:mb-6 text-foreground">Alex "Ink" Vane</h3>
                         </div>
 
-                        <p className="text-gray-400 text-base md:text-lg leading-relaxed font-light">
+                        <p className="text-muted-foreground text-base md:text-lg leading-relaxed font-light">
                             Specializing in hyper-realism and dark surrealism. With over 15 years of experience, Alex brings a unique cinematic approach to every piece, treating skin as a canvas for eternal storytelling. His work is characterized by deep contrast and intricate detailing.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4 pt-4 md:pt-8">
-                            <button className="px-6 md:px-8 py-3 border border-white hover:bg-white hover:text-black transition-all duration-300 uppercase text-xs md:text-sm tracking-widest w-full sm:w-auto">
+                            <button className="px-6 md:px-8 py-3 border border-border text-foreground hover:bg-foreground hover:text-background transition-all duration-300 uppercase text-xs md:text-sm tracking-widest w-full sm:w-auto">
                                 View Portfolio
                             </button>
-                            <button className="px-6 md:px-8 py-3 bg-white text-black hover:bg-gray-200 transition-all duration-300 uppercase text-xs md:text-sm tracking-widest w-full sm:w-auto">
+                            <button className="px-6 md:px-8 py-3 bg-foreground text-background hover:bg-foreground/90 transition-all duration-300 uppercase text-xs md:text-sm tracking-widest w-full sm:w-auto">
                                 Book Artist
                             </button>
                         </div>

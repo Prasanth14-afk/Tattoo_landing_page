@@ -50,16 +50,16 @@ export default function Navbar() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            className="text-xs lg:text-sm uppercase tracking-widest hover:text-gray-400 transition-colors relative group"
+                            className="text-xs lg:text-sm uppercase tracking-widest text-foreground hover:text-muted-foreground transition-colors relative group"
                         >
                             {link.name}
-                            <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full" />
+                            <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-foreground transition-all duration-300 group-hover:w-full" />
                         </Link>
                     ))}
                     <ThemeToggle />
                     <Link
                         href="#booking"
-                        className="px-4 lg:px-6 py-2 border border-white/20 hover:bg-white hover:text-black transition-all duration-300 uppercase text-xs tracking-widest"
+                        className="px-4 lg:px-6 py-2 border border-border text-foreground hover:bg-foreground hover:text-background transition-all duration-300 uppercase text-xs tracking-widest"
                     >
                         Book Now
                     </Link>
@@ -67,7 +67,7 @@ export default function Navbar() {
 
                 {/* Mobile Toggle */}
                 <button
-                    className="md:hidden z-50 relative text-white p-2"
+                    className="md:hidden z-50 relative text-foreground p-2"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     aria-label="Toggle menu"
                 >
@@ -90,7 +90,7 @@ export default function Navbar() {
                                 key={link.name}
                                 href={link.href}
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="text-3xl sm:text-4xl md:text-5xl font-display uppercase tracking-widest hover:text-gray-400 transition-colors"
+                                className="text-3xl sm:text-4xl md:text-5xl font-display uppercase tracking-widest text-foreground hover:text-muted-foreground transition-colors"
                             >
                                 {link.name}
                             </Link>
@@ -100,7 +100,7 @@ export default function Navbar() {
                             <Link
                                 href="#booking"
                                 onClick={() => setIsMobileMenuOpen(false)}
-                                className="px-8 py-3 border border-white/20 hover:bg-white hover:text-black transition-all duration-300 uppercase text-sm tracking-widest"
+                                className="px-8 py-3 border border-border text-foreground hover:bg-foreground hover:text-background transition-all duration-300 uppercase text-sm tracking-widest"
                             >
                                 Book Appointment
                             </Link>
