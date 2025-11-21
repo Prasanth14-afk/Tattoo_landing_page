@@ -32,13 +32,13 @@ export default function Hero() {
             {/* Content */}
             <motion.div
                 style={{ opacity }}
-                className="relative z-10 text-center flex flex-col items-center gap-6 px-4"
+                className="relative z-10 text-center flex flex-col items-center gap-4 md:gap-6 px-4 md:px-6"
             >
                 <motion.h1
                     initial={{ y: 100, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-                    className="text-7xl md:text-[10rem] font-display font-bold tracking-tighter uppercase leading-[0.8] mix-blend-difference text-white"
+                    className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[10rem] font-display font-bold tracking-tighter uppercase leading-[0.85] md:leading-[0.8] mix-blend-difference text-white"
                 >
                     Ink & <br /> <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-600">Iron</span>
                 </motion.h1>
@@ -47,7 +47,7 @@ export default function Hero() {
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-                    className="text-sm md:text-lg font-light tracking-[0.3em] text-gray-300 uppercase max-w-xl mt-4"
+                    className="text-xs sm:text-sm md:text-base lg:text-lg font-light tracking-[0.2em] md:tracking-[0.3em] text-gray-300 uppercase max-w-xl mt-2 md:mt-4 px-4"
                 >
                     The Art of Permanence.
                 </motion.p>
@@ -56,10 +56,10 @@ export default function Hero() {
                     initial={{ scale: 0.9, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     transition={{ duration: 1, delay: 0.8 }}
-                    className="mt-12"
+                    className="mt-6 md:mt-12"
                 >
-                    <a href="#portfolio" className="group relative inline-flex h-14 items-center justify-center overflow-hidden border border-white/30 bg-transparent px-10 font-medium text-white transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
-                        <span className="mr-2 uppercase tracking-widest text-sm">Enter Studio</span>
+                    <a href="#portfolio" className="group relative inline-flex h-12 md:h-14 items-center justify-center overflow-hidden border border-white/30 bg-transparent px-8 md:px-10 font-medium text-white transition-all duration-500 hover:bg-white hover:text-black hover:border-white">
+                        <span className="uppercase tracking-widest text-xs md:text-sm">Enter Studio</span>
                     </a>
                 </motion.div>
             </motion.div>
@@ -69,7 +69,7 @@ export default function Hero() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 1.5, duration: 1 }}
-                className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2"
+                className="absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 hidden sm:flex"
             >
                 <span className="text-[10px] uppercase tracking-widest opacity-50">Scroll</span>
                 <motion.div
